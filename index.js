@@ -32,7 +32,7 @@ app.use(require("./routes/transaction"))
 // app.use(require("./routes/user"));
 
 app.get('/', (req, res) => {
-  res.send("App is running");
+  res.send(MONGOURI);
 })
 
 // if(process.env.NODE_ENV == "production") {
