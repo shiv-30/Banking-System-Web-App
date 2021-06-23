@@ -15,8 +15,8 @@ mongoose.connect(CONNECTION_URL, {
     useUnifiedTopology: true,
     useFindAndModify:false
 })
-const check = "not connected"
-mongoose.connection.on('connected', () => {check = 'connected to mongo'})
+
+mongoose.connection.on('connected', () => {console.log('connected to mongo')})
 
 mongoose.connection.on('error', (err) => {
   console.log("error ", err);
@@ -33,7 +33,8 @@ app.use(require("./routes/transaction"))
 // app.use(require("./routes/user"));
 
 app.get('/', (req, res) => {
-  res.send(check);
+  res.send(CONNECTION_URL);
+  console.log(CONNECTION_URL);
 })
 
 // if(process.env.NODE_ENV == "production") {
