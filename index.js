@@ -3,13 +3,14 @@ const mongoose = require('mongoose')
 const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 5002
-const {MONGOURI}  = require('./config/key')
+
+const CONNECTION_URL = "mongodb+srv://admin-avenger:test123avenger@cluster0.ofmvr.mongodb.net/myBankDB?retryWrites=true&w=majority";
 
 
 
 
 
-mongoose.connect(MONGOURI, {
+mongoose.connect(CONNECTION_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify:false
