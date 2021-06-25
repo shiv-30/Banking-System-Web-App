@@ -1,0 +1,15 @@
+.accord {
+    width: 60% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    font-weight: 900;
+}
+
+.secondaryHeading {
+    color: rgb(12, 158, 243) !important;
+    font-weight:500;
+}
+
+.textField {
+    margin-bottom:  5% !important;
+}
