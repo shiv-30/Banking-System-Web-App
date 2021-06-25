@@ -4,7 +4,7 @@ const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 5002
 
-const CONNECTION_URL = "mongodb+srv://admin-avenger:test123avenger@cluster0.ofmvr.mongodb.net/myBankDB?retryWrites=true&w=majority";
+const CONNECTION_URL = "add mongoDb url";
 
 
 
