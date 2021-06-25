@@ -33,8 +33,8 @@ app.use(require("./routes/transaction"))
 // app.use(require("./routes/user"));
 
 app.get('/', (req, res) => {
-  res.send(CONNECTION_URL);
-  console.log(CONNECTION_URL);
+  res.send("App is running");
+  console.log("App is running");
 })
 
 // if(process.env.NODE_ENV == "production") {
